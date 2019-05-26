@@ -1,0 +1,3 @@
+[build]
+command = "mkdir -p _site && npm run build"
+functions = "_site"

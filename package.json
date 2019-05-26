@@ -4,7 +4,8 @@
   "description": "Fetch usage stats about Volta",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "netlify-lambda build functions",
+    "start": "netlify-lambda serve functions"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
     "semver": "^6.1.0"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^1.4.13"
   }
 }
